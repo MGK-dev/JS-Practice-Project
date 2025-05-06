@@ -5,10 +5,12 @@ body {
 .clock-dial {
     width: 500px;
     height: 500px;
-    border: 20px solid #00818a;
+    border: 20px solid #563727;
+    background-color: rgba(222, 158, 72, 0.4);
     border-radius: 50%;
     margin: 0 auto;
     position: relative;
+    box-shadow: 5px 5px 10px grey;
 }
 .point {
     width: 20px;
@@ -75,9 +77,9 @@ body {
     left: 235px;
 }
 .brand {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
-    color: #00818a;
+    color: #563727;
     position: absolute;
     top: 90px;
     left: 42.5%;
@@ -97,14 +99,14 @@ body {
 .minute-hand .hand {
     width: 4px;
     height: 200px; /* half of minute-hand-wrapper height*/
-    background-color: #404b69;
+    background-color: #563727;
     position: absolute;
     left: 198px;
 }
 .minute-hand .arrow {
     font-size: 30px;
     font-weight: bold;
-    color: #404b69;
+    color: #563727;
     transform: rotate(180deg);
     position: absolute;
     left: 190px;
@@ -125,14 +127,14 @@ body {
 .hour-hand .hand {
     width: 4px;
     height: 150px; /* half of minute-hand-wrapper height*/
-    background-color: #404b69;
+    background-color: #563727;
     position: absolute;
     left: 148px;
 }
 .hour-hand .arrow {
     font-size: 30px;
     font-weight: bold;
-    color: #404b69;
+    color: #563727;
     transform: rotate(180deg);
     position: absolute;
     left: 140px;
@@ -153,7 +155,7 @@ body {
 .second-hand .hand {
     width: 2px;
     height: 175px; /* half of minute-hand-wrapper height*/
-    background-color: #404b69;
+    background-color: #aa7228;
     position: absolute;
     left: 174px;
 }
