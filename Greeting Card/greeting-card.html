@@ -6,5 +6,45 @@
     <title>Customize Greeting Card</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <!-- 1. Form Section -->
+      <div class="card-form">
+        <h2>Create your Greeting Card</h2>
+
+        <!-- Occasion dropdown -->
+        <label for="occasion">Select Occasion:</label>
+        <select id="occasion">
+          <option value="Birthday">Birthday</option>
+          <option value="Anniversary">Anniversary</option>
+          <option value="Congratulation">Congratulation</option>
+          <option value="Thank You">Thank You</option>
+        </select>
+
+        <!-- Message textarea -->
+        <label for="message">Your Message:</label>
+        <textarea
+          id="message"
+          rows="4"
+          placeholder="Write your message..."
+        ></textarea>
+
+        <!-- Background color picker -->
+        <label for="bgColor">Choose Background Color:</label>
+        <input type="color" id="bgColor" value="#ffffff" />
+
+        <!-- Preview button -->
+        <button id="PreviewBtn">Preview Card</button>
+      </div>
+
+      <!-- 2. Preview Section -->
+      <div class="card-preview" id="cardPreview">
+        <!-- Dynamic occasion heading -->
+        <h2 id="PreviewOccasion">[Occasion]</h2>
+
+        <!-- Dynamic message -->
+        <p id="previewMessage">Your message will appear here.</p>
+      </div>
+    </div>
+  </body>
 </html>
